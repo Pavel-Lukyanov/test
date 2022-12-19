@@ -7,11 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" autofocus>
+    <label for="input">sdfsdf</label>
+    <input id="input" type="text" autofocus>
     <script>
         document.addEventListener('DOMContentLoaded', function(){
             let input = document.querySelector('input');
-            input.touchstart();
+            let label = document.querySelector('label');            
+            label.click();
         })
     </script>
 </body>
