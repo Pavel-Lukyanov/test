@@ -13,7 +13,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             let input = document.querySelector('input');
-            input.event == 'KeyZ';
+           /*  input = new Event('click'[false, false, false]); */
+
+            let event = new Event("click");
+            input.dispatchEvent(event);
         })
     </script>
 </body>
