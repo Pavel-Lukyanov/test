@@ -9,15 +9,11 @@
 </head>
 
 <body>
-    <label for="input">sdfsdf</label>
-    <input id="input" type="text">
+    <input type="text">
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             let input = document.querySelector('input');
-            let label = document.querySelector('label');
-            setTimeout(() => {
-                label.click();
-            }, 3000)
+            input.inputMode('text');
         })
     </script>
 </body>
